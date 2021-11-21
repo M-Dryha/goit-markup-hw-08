@@ -1,0 +1,38 @@
+.section-photo {
+  padding-top: 0;
+}
+
+.photo-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.photo-list__wrapper {
+  position: relative;
+}
+.photo-list__discription {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--secondary-color-text);
+}
+.photo-list__label {
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0%;
+}

@@ -1,0 +1,33 @@
+// UTILS
+@import "./utils/_var-scc";
+@import "./utils/visually-hidden";
+@import "./utils/placeholder";
+
+// BASE
+@import "./base/common";
+
+// COMPONENTS
+@import "./components/container";
+@import "./components/section";
+@import "./components/nav__logo";
+@import "./components/hero_btn";
+@import "./components/header-item";
+@import "./components/social-list";
+@import "./components/footer-form";
+@import "./components/burger-button-close";
+
+// LAYOUT
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/section-photo";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/button-list-portfolio";
+@import "./layout/portfolio-card";
+@import "./components/backdrop";
+@import "./components/modal-close-btn";
+@import "./components/modal";
+@import "./components/modal-form";

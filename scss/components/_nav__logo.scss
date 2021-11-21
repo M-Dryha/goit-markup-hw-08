@@ -1,0 +1,27 @@
+.nav__logo {
+  display: inline-block;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-header);
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (width: 1200px) {
+    margin-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo {
+  color: var(--accent-color);
+}

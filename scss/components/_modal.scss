@@ -1,0 +1,13 @@
+.modal {
+  position: absolute;
+  width: 530px;
+
+  background-color: var(--secondary-color-text);
+  border-radius: 4px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
