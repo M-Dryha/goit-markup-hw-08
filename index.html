@@ -49,22 +49,19 @@
             </li>
         </ul>
         <!-- -----Burger-menu------ -->
-        <button type="button" class="burger-button" data-menu-open>
-            <svg class="burger-button__icon">
-                <use href="./images/icons.svg#icon-burger-menu"></use>
-            </svg>
-        </button>
-        <div class="mobile-menu" data-menu>
-            <button type="button"class="burger-button-close" data-menu-close>
-            <svg class="burger-icon-close">
-                <use href="./images/icons.svg#icon-close-menu"></use>
+        <button type="button" class="burger-button is-open"data-menu >
+            <svg 
+             width="40"
+             height="40" 
+             aria-label="Переключатель мобильного меню">
+                <use class="burger-button__icon" data-menu-open href="./images/icons.svg#icon-burger-menu"></use>
+                <use class="burger-button__close" data-menu-close href="./images/icons.svg#icon-close-menu"></use>
            </svg>
-            </button>
-
-
-
+        </button>
+         <div class="mobile-menu is-open" >
+          Меню
         </div>
-    </div>
+    </div> -->
     </header>
 <!-- <main>
    <section class="section hero">
