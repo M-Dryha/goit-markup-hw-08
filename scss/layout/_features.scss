@@ -1,16 +1,39 @@
 .features {
-  display: flex;
-  justify-content: center;
+  display: block;
 
   &__list:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    &__list:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+
+    &__list:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.features__list.list {
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 .features__div {
   @extend %flex;
 
-  width: 270px;
+  width: 354px;
   height: 120px;
   margin-bottom: 30px;
 
@@ -24,8 +47,13 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--color-header);
   margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 .features__discription {
   font-size: 14px;
