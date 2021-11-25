@@ -234,6 +234,7 @@
 
 .contacts {
   display: flex;
+  align-items: baseline;
 
   @media screen and (max-width: 1199px) {
     display: inline-block;
