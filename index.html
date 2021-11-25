@@ -49,14 +49,14 @@
             </li>
         </ul>
 <!-- -----Burger-menu------ -->
-<button type="button" class="burger-button is-open" data-menu-open>
+<button type="button" class="burger-button" data-menu-open>
     <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="burger-button__icon">
         <use href="./images/icons.svg#icon-burger-menu"></use>
 
     </svg>
 </button>      
         </div>   
- <div class="mobile-menu is-hidden" data-menu>
+ <div class="mobile-menu" data-menu>
         
         <button type="button" 
             width="40"
@@ -177,7 +177,7 @@
        </ul>
     </div>
    </section>
-<!--
+
    <section class="section section-photo">
        <div class="container">
             <h2 class="header-item">Чем мы занимаемся</h2>
@@ -187,17 +187,39 @@
                         <div class="photo-list__label">
                             <p class="photo-list__discription">Десктопные приложения</p>
                         </div>
-                        <img src="./images/box-1.jpg" alt="Экран компьютера и руки" width="370">      
-                    </div>
-                    
-                    
+                <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/occupation/occ-1-desktop.webp 1x,
+                            ./images/occupation/occ-1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    >
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="./images/occupation/occ-1-desktop.jpg 1x,
+                                ./images/occupation/occ-1-desktop@2x.jpg 2x
+                        ">
+                <img src="#" alt="Экран компьютера и руки" width="370">
+                </picture>
+                    </div>  
                 </li>
                 <li class="list photo-list__item">
                     <div class="photo-list__wrapper">
                         <div class="photo-list__label">
                         <p class="photo-list__discription">Мобильные приложения</p>
                    </div>
-                        <img src="./images/box-2.jpg" alt="Экран компьютера и телефон" width="370">
+
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-2-desktop.webp 1x,
+                                            ./images/occupation/occ-2-desktop@2x.webp 2x
+                                    " type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-2-desktop.jpg 1x,
+                                                ./images/occupation/occ-2-desktop@2x.jpg 2x
+                                        ">
+                    <img src="#" alt="Экран компьютера и телефон" width="370">
+                </picture>
+                        
                     </div>
                 </li>
                 <li class="list photo-list__item">
@@ -205,12 +227,23 @@
                         <div class="photo-list__label">
                             <p class="photo-list__discription">Дизайнерские решения</p>
                         </div>
-                            <img src="./images/box-3.jpg" alt="Экран компьютера с цветной раскладкой" width="370">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/occupation/occ-3-desktop.webp 1x,
+                                                                    ./images/occupation/occ-3-desktop@2x.webp 2x
+                                                            " type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/occupation/occ-3-desktop.jpg 1x,
+                                                                        ./images/occupation/occ-3-desktop@2x.jpg 2x
+                                                                ">
+                            <img src="#" alt="Экран компьютера с цветной раскладкой" width="370">
+                            </div>
+                        </picture>
+                           
                     </div>
                 </li> 
             </ul>
       </div>
    </section>
+
    <section class="team-section section">
        <div class="container">
         <h2 class="header-item">Наша команда</h2>
@@ -366,6 +399,7 @@
 </ul>
 </div>
    </section>
+<!--
 <section class="section">
     <div class="container">
         <h2 class="header-item">Постоянные клиенты</h2>
