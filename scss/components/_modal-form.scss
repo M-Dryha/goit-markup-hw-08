@@ -5,12 +5,17 @@
   &-head {
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(23 / 20);
+    }
   }
+
   &-field {
     font-weight: 400;
     font-size: 12px;
@@ -116,8 +121,8 @@
   @extend %flex;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   color: var(--primary-color-text);
@@ -137,6 +142,11 @@
   &:hover::before,
   &:focus::before {
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
   }
 }
 

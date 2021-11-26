@@ -3,31 +3,72 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container-footer {
-  display: flex;
-  align-items: baseline;
+
+.footer-div {
+  @media screen and (min-width: 768px) {
+    margin-left: 79px;
+  }
 }
 
-.footer-contacts {
-  margin-right: 70px;
+.container-footer {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer-wraper {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-adress-wrapper,
+.footer-div {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: (100% / 2);
+    margin-left: 0;
+  }
 }
 
 .address {
+  @extend %flex;
   font-style: inherit;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .webstudio-white {
+  @extend %flex;
   font-family: var(--secondary-font-family);
   font-weight: 500;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
   color: var(--secondary-color-text);
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
 .footer-adress {
   display: inline-block;
+
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -41,8 +82,17 @@
     color: var(--accent-color);
   }
 }
-.footer-list {
-  margin-bottom: 9px;
+
+.footer-item {
+  @extend %flex;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .footer-contacts {
@@ -57,10 +107,15 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-header {
-  display: block;
+  display: flex;
+  justify-content: center;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -70,14 +125,25 @@
 
   color: var(--secondary-color-text);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .footer-social-list {
   display: flex;
-}
+  justify-content: center;
+  margin-bottom: 60px;
 
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer-social-link {
