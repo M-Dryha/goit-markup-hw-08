@@ -16,12 +16,10 @@
 </head>
 
 <body>
-<header class="header header-border">
+<header class="header">
     <div class="container header-container">
         <nav class="nav">
-            
             <a href="" class="nav__logo link"><span class="logo">Web</span>Studio</a>
-            
             <ul class="navigation-list navigation-list--margin">
                 <li class="list navigation-list__item">
                     <a href="./index.html" class="navigation-list__link link">Студия</a>
@@ -36,7 +34,7 @@
 
         </nav>
 
-        <ul class="contacts contacts--margin-left">
+        <ul class="contacts contacts--margin">
             <li class="list contacts__list">
                 <a href="mailto:info@devstudio.com" class="contacts__link link">
                     <svg class="contacts__envelope" width="16" height="12">
@@ -53,6 +51,66 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+        <!-- -----Burger-menu------ -->
+        <button type="button" class="burger-button" data-menu-open>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="burger-button__icon">
+                <use href="./images/icons.svg#icon-burger-menu"></use>
+
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+
+        <button type="button" width="40" height="40" class="burger-button__close" data-menu-close>
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <div class="burger-container">
+            <div class="burger-navigation">
+                <ul class="burger-navigation__list list">
+                    <li class="list burger-navigation__item">
+                        <a href="" class="burger-navigation__link link">Студия</a>
+                    </li>
+                    <li class="link burger-navigation__item">
+                        <a href="" class="burger-navigation__link link">Портфолио</a>
+                    </li>
+                    <li class="link burger-navigation__item">
+                        <a href="" class="burger-navigation__link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="burger-contacts">
+                    <li class="list burger-contacts__list">
+                        <a href="tel:+380961111111" class="burger-contacts__tel link">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="list burger-contacts__list">
+                        <a href="mailto:info@devstudio.com" class=" burger-contacts__link link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="burger-social">
+                    <li class="list burger-social__list">
+                        <a href="" class="link burger-social__link">Instagram</a>
+                    </li>
+                    <li class="list burger-social__list">
+                        <a href="" class="link burger-social__link">Twitter</a>
+                    </li>
+                    <li class="list burger-social__list">
+                        <a href="" class="link burger-social__link">Facebook</a>
+                    </li>
+                    <li class="list burger-social__list">
+                        <a href="" class="link burger-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </header>
     <main>
@@ -76,8 +134,28 @@
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-                  
-                            <img src="./images-portfolio/технокряк_vzy2x.jpg" alt="Фото сайта" width="370">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/works/works-1-desktop.webp.webp 1x,
+                                    ./images/works/works-1-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/works/works-1-desktop.jpg 1x,
+                                ./images/works/works-1-desktop@2x.jpg 2x ">
+                        
+                            <source media="(min-width: 768px)" srcset="./images/works/works-1-tablet.webp 1x,
+                                ./images/works/works-1-tablet@2x.webp 2x
+                                " type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/works/works-1-tablet.jpg.jpg.jpg 1x,
+                                    ./images/works/works-1-tablet@2x.jpg 2x">
+                        
+                        
+                            <source media="(min-width: 480px)" srcset="./images/works/works-1.webp 1x,
+                                 ./images/works/works-1@2x.webp 2x" type="image/webp">
+                        
+                            <source media="(min-width: 480px)" srcset="./images/works/works-1.jpg 1x,
+                                 ./images/works/works-1.jpg@2x.jpg 2x ">
+                        
+                            <img src="" alt="Фото сайта">
+                        </picture>
+                           
                    </div>             
                     <div class="card-item">
                         <h2 class="projects-item">Технокряк</h2>
@@ -218,58 +296,60 @@
     </main>
 <footer class="footer">
     <div class="container container-footer">
-        <div class="footer-contacts">
-            <a href="" class=" webstudio-white link"><span class="logo">Web</span>Studio</a>
-            <address class="address">
-                <ul>
-                    <li class="list footer-list">
-                        <a href="" class="footer-adress link">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="footer-wraper">
+            <div class="footer-adress-wrapper">
+                <a href="" class=" webstudio-white link"><span class="logo">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="footer-contacts-list">
+                        <li class="list footer-item">
+                            <a href="" class="footer-adress link">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="list footer-item">
+                            <a href="" class="link footer-contacts">info@example.com</a>
+                        </li>
+                        <li class="list  footer-item">
+                            <a href="" class="link footer-contacts">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-div">
+                <strong class="footer-header">
+                    присоединяйтесь
+                </strong>
+                <ul class="footer-social-list">
+                    <li class="list social-list__item">
+                        <a href="" class="social-list__link footer-social-link">
+                            <svg class="social-list__icon footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="list footer-list">
-                        <a href="" class="link footer-contacts">info@example.com</a>
+                    <li class="list social-list__item">
+                        <a href="" class="social-list__link footer-social-link">
+                            <svg class="social-list__icon footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="list">
-                        <a href="" class="link footer-contacts">+38 099 111 11 11</a>
+                    <li class="list social-list__item">
+                        <a href="" class="social-list__link footer-social-link">
+                            <svg class="social-list__icon footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list social-list__item">
+                        <a href="" class="social-list__link footer-social-link">
+                            <svg class="social-list__icon footer-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
-        </div>
-        <div class="footer-div">
-            <strong class="footer-header">
-                присоединяйтесь
-            </strong>
-        <ul class="footer-social-list">
-            <li class="list social-list__item">
-                <a href="" class="social-list__link footer-social-link">
-                    <svg class="social-list__icon footer-social-icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="list social-list__item">
-                <a href="" class="social-list__link footer-social-link">
-                    <svg class="social-list__icon footer-social-icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="list social-list__item">
-                <a href="" class="social-list__link footer-social-link">
-                    <svg class="social-list__icon footer-social-icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="list social-list__item">
-                <a href="" class="social-list__link footer-social-link">
-                    <svg class="social-list__icon footer-social-icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        </div>
 
+            </div>
+        </div>
         <div class="footer-form-wrapper">
             <strong class="footer-header">
                 Подпишитесь на рассылку

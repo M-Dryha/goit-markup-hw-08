@@ -61,6 +61,7 @@
 }
 
 .features__item {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -70,8 +71,8 @@
   color: var(--color-header);
   margin-bottom: 10px;
 
-  @media screen and (min-width: 480px) {
-    text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }
 .features__discription {
