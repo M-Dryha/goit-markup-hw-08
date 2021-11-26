@@ -15,6 +15,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer-wraper {
@@ -22,6 +23,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
     margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {

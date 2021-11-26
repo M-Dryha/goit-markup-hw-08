@@ -278,7 +278,6 @@ h6 {
 
 .header-container {
   position: relative;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -911,6 +910,7 @@ h6 {
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -921,6 +921,7 @@ h6 {
 @media screen and (min-width: 768px) {
   .footer-wraper {
     display: flex;
+    align-items: baseline;
     margin-bottom: 60px;
   }
 }
