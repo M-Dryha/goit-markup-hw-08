@@ -485,13 +485,15 @@ h6 {
   }
 }
 
-.navigation-list--margin {
-  margin-left: 93px;
-}
-
 @media screen and (min-width: 768px) {
   .navigation-list--margin {
     margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list--margin {
+    margin-left: 93px;
   }
 }
 
@@ -1065,15 +1067,16 @@ h6 {
   margin-bottom: 56px;
 }
 
-.button-list > .list:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .button-list > .list:not(:last-child) {
-    font-weight: nowrap;
-    justify-content: center;
-  }
+.button-list > .list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-list__item {

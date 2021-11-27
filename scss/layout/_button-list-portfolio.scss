@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 56px;
-}
-.button-list > .list:not(:last-child) {
-  margin-right: 8px;
 
   @media screen and (min-width: 768px) {
-    font-weight: nowrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
+  }
+  & > .list:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
