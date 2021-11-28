@@ -20,10 +20,8 @@
 }
 
 .portfolio-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: 2px solid teal;
+  @extend %flex;
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -36,6 +34,7 @@
   border-top: 0;
 }
 .projects-item {
+  outline: 2px solid teal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -67,7 +66,7 @@
   overflow: hidden;
 }
 
-.portfolio-discr {
+.portfolio-text-discription {
   width: 322px;
   font-family: inherit;
   font-weight: 400;
