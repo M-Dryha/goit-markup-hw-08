@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<header class="header">
+<header class="header header-border">
     <div class="container header-container">
         <nav class="nav">
             <a href="" class="nav__logo link"><span class="logo">Web</span>Studio</a>
@@ -36,7 +36,7 @@
 
         <ul class="contacts contacts--margin">
             <li class="list contacts__list">
-                <a href="mailto:info@devstudio.com" class="contacts__link link">
+                <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail link">
                     <svg class="contacts__envelope" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li class="list contacts__list">
-                <a href="tel:+380961111111" class="contacts__link link">
+                <a href="tel:+380961111111" class="contacts__link contacts__link--tel link">
                     <svg class="contacts__envelope" width="10" height="16">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>
@@ -117,12 +117,22 @@
 <section class="section">
     <div class="container">
         <h1 class="visually-hidden">Наши работы</h1>
-        <ul class="button-list">
-            <li class="list"> <button type="button" class="button-list__item  button-list__item--active">Все</button></li>
-            <li class="list"> <button type="button" class="button-list__item">Веб-сайты</button></li>
-            <li class="list"> <button type="button" class="button-list__item">Приложения</button></li>
-            <li class="list"> <button type="button" class="button-list__item">Дизайн</button></li>
-            <li class="list"> <button type="button" class="button-list__item">Маркетинг</button></li>
+        <ul class="portfolio-button">
+            <li class="list portfolio-button-list">
+                 <button type="button" class="button-list__item  button-list__item--active">Все</button>
+                </li>
+            <li class="list portfolio-button-list">
+                 <button type="button" class="button-list__item">Веб-сайты</button>
+                </li>
+            <li class="list portfolio-button-list">
+                 <button type="button" class="button-list__item">Приложения</button>
+                </li>
+            <li class="list portfolio-button-list">
+                 <button type="button" class="button-list__item">Дизайн</button>
+                </li>
+            <li class="list portfolio-button-list"> 
+                <button type="button" class="button-list__item">Маркетинг</button>
+            </li>
         </ul>
 
         <ul class="card-list">
@@ -153,7 +163,7 @@
                             <source media="(min-width: 480px)" srcset="./images/works/works-1.jpg 1x,
                                  ./images/works/works-1.jpg@2x.jpg 2x ">
                         
-                            <img src="№" alt="Фото сайта">
+                            <img src="./images-portfolio/технокряк_vzy2x.jpg" alt="Фото сайта" width="370">
                         </picture>
                            
                    </div>             
@@ -172,25 +182,31 @@
                         </div>
 
                         <picture>
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-2-desktop.webp 1x,
-                                                            ./images/works/works-2-desktop@2x.webp 2x" type="image/webp">
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-2-desktop.jpg 1x,
-                                                        ./images/works/works-2-desktop@2x.jpg 2x ">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/works/works-2-desktop.webp 1x,
+                                ./images/works/works-2-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/works/works-2-desktop.jpg 1x,
+                               ./images/works/works-2-desktop@2x.jpg 2x ">
                         
-                            <source media="(min-width: 768px)" srcset="./images/works/works-2-tablet.webp 1x,
-                                                        ./images/works/works-2-tablet@2x.webp 2x
-                                                        " type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./images/works/works-2-tablet.jpg 1x,
-                                                            ./images/works/works-2-tablet@2x.jpg 2x">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/works/works-2-tablet.webp 1x,
+                                 ./images/works/works-2-tablet@2x.webp 2x
+                            " type="image/webp">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/works/works-2-tablet.jpg 1x,
+                                  ./images/works/works-2-tablet@2x.jpg 2x">
                         
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-2.webp 1x,
-                                                         ./images/works/works-2@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 480px)" 
+                            srcset="./images/works/works-2.webp 1x,
+                                ./images/works/works-2@2x.webp 2x" type="image/webp">
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-2.jpg 1x,
-                                                         ./images/works/works-2.jpg@2x.jpg 2x ">
+                            <source media="(min-width: 480px)" 
+                            srcset="./images/works/works-2.jpg 1x,
+                                ./images/works/works-2.jpg@2x.jpg 2x ">
                         
-                        <img src="№" alt="Два игрока с мячем">
+                        <img src="./images-portfolio/постер_hzv0u.jpg" alt="Два игрока с мячем" width="370">
                         </picture>
                         
                     </div>
@@ -220,15 +236,14 @@
                             " type="image/webp">
                             <source media="(min-width: 768px)" srcset="./images/works/works-3-tablet.jpg 1x,
                                 ./images/works/works-3-tablet@2x.jpg 2x">
-                        
-                        
+                                 
                             <source media="(min-width: 480px)" srcset="./images/works/works-3.webp 1x,
                                 ./images/works/works-3@2x.webp 2x" type="image/webp">
                         
                             <source media="(min-width: 480px)" srcset="./images/works/works-3.jpg 1x,
                                 ./images/works/works-3.jpg@2x.jpg 2x ">
                         
-                            <img src="#" alt="Логотип ресторана">
+                            <img src="./images-portfolio/ресторан_u8nsb.jpg" alt="Логотип ресторана" width="370">
                         </picture>
   
                     </div>
@@ -247,26 +262,33 @@
                                     платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="./images/works/works-4-desktop.webp 1x,
-                                                                                        ./images/works/works-4-desktop@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 1200px)" srcset="./images/works/works-4-desktop.jpg 1x,
-                                                                                    ./images/works/works-4-desktop@2x.jpg 2x ">
+                                <source media="(min-width: 1200px)" 
+                                srcset="./images/works/works-4-desktop.webp 1x,
+                                        ./images/works/works-4-desktop@2x.webp 2x"
+                                           type="image/webp">
+                                <source media="(min-width: 1200px)" 
+                                srcset="./images/works/works-4-desktop.jpg 1x,
+                                            ./images/works/works-4-desktop@2x.jpg 2x ">
                             
-                                <source media="(min-width: 768px)" srcset="./images/works/works-4-tablet.webp 1x,
-                                                                                    ./images/works/works-4-tablet@2x.webp 2x
-                                                                                    " type="image/webp">
-                                <source media="(min-width: 768px)" srcset="./images/works/works-4-tablet.jpg 1x,
-                                                                                        ./images/works/works-4-tablet@2x.jpg 2x">
+                                <source media="(min-width: 768px)" 
+                                srcset="./images/works/works-4-tablet.webp 1x,
+                                            ./images/works/works-4-tablet@2x.webp 2x
+                                            " type="image/webp">
+                                <source media="(min-width: 768px)" 
+                                srcset="./images/works/works-4-tablet.jpg 1x,
+                                         ./images/works/works-4-tablet@2x.jpg 2x">
                             
                             
-                                <source media="(min-width: 480px)" srcset="./images/works/works-4.webp 1x,
-                                                                                     ./images/works/works-4@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 480px)" 
+                                srcset="./images/works/works-4.webp 1x,
+                                        ./images/works/works-4@2x.webp 2x"
+                                         type="image/webp">
                             
-                                <source media="(min-width: 480px)" srcset="./images/works/works-4.jpg 1x,
-                                                                                     ./images/works/works-4.jpg@2x.jpg 2x ">
+                                <source media="(min-width: 480px)" 
+                                srcset="./images/works/works-4.jpg 1x,
+                                        ./images/works/works-4.jpg@2x.jpg 2x ">
                             
-                                <img src="#" alt="Наушники">
+                                <img src="./images-portfolio/prime_2al8f.jpg" alt="Наушники" width="370">
                             </picture>
                         
                     </div>
@@ -285,25 +307,31 @@
                                     платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="./images/works/works-5-desktop.webp 1x,
-                                                                        ./images/works/works-5-desktop@2x.webp 2x" type="image/webp">
-                                <source media="(min-width: 1200px)" srcset="./images/works/works-5-desktop.jpg 1x,
+                            <source media="(min-width: 1200px)"     
+                            srcset="./images/works/works-5-desktop.webp 1x,
+                                    ./images/works/works-5-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"     
+                            srcset="./images/works/works-5-desktop.jpg 1x,
                                                                     ./images/works/works-5-desktop@2x.jpg 2x ">
                             
-                                <source media="(min-width: 768px)" srcset="./images/works/works-5-tablet.webp 1x,
-                                                                    ./images/works/works-5-tablet@2x.webp 2x
+                            <source media="(min-width: 768px)"  
+                            srcset="./images/works/works-5-tablet.webp 1x,
+                                    ./images/works/works-5-tablet@2x.webp 2x
                                                                     " type="image/webp">
-                                <source media="(min-width: 768px)" srcset="./images/works/works-5-tablet.jpg 1x,
-                                                                        ./images/works/works-5-tablet@2x.jpg 2x">
+                            <source media="(min-width: 768px)"  
+                             srcset="./images/works/works-5-tablet.jpg 1x,
+                                    ./images/works/works-5-tablet@2x.jpg 2x">
                             
                             
-                                <source media="(min-width: 480px)" srcset="./images/works/works-5.webp 1x,
-                                                                    ./images/works/works-5@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 480px)"  
+                            srcset="./images/works/works-5.webp 1x,
+                                    ./images/works/works-5@2x.webp 2x" type="image/webp">
                             
-                                <source media="(min-width: 480px)" srcset="./images/works/works-5.jpg 1x,
-                                                                    ./images/works/works-5.jpg@2x.jpg 2x ">
+                            <source media="(min-width: 480px)"  
+                            srcset="./images/works/works-5.jpg 1x,
+                                    ./images/works/works-5.jpg@2x.jpg 2x ">
                             
-                                <img src="#" alt="Две коробки">
+                                <img src="./images-portfolio/boxes_p5cgm.jpg" alt="Две коробки" width="370">
                             </picture>
                         
                        </div>
@@ -348,7 +376,7 @@
                                 srcset="./images/works/works-6.jpg 1x,
                                 ./images/works/works-6.jpg@2x.jpg 2x ">
                         
-                            <img src="#" alt="Экран компьютера">
+                            <img src="./images-portfolio/inspitation_p3u4z.jpg" alt="Экран компьютера" width="370">
                         </picture>
                         
                    </div>
@@ -367,25 +395,31 @@
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                         <picture>
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-7-desktop.webp 1x, 
-                                                            ./images/works/works-7-desktop@2x.webp 2x" type="image/webp">
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-7-desktop.jpg 1x,
-                                                        ./images/works/works-7-desktop@2x.jpg 2x ">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/works/works-7-desktop.webp 1x, 
+                                    ./images/works/works-7-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/works/works-7-desktop.jpg 1x,
+                                ./images/works/works-7-desktop@2x.jpg 2x ">
                         
-                            <source media="(min-width: 768px)" srcset="./images/works/works-7-tablet.webp 1x,
-                                                        ./images/works/works-7-tablet@2x.webp 2x
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/works/works-7-tablet.webp 1x,
+                                ./images/works/works-7-tablet@2x.webp 2x
                                                         " type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./images/works/works-7-tablet.jpg 1x,
-                                                            ./images/works/works-7-tablet@2x.jpg 2x">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/works/works-7-tablet.jpg 1x,
+                                 ./images/works/works-7-tablet@2x.jpg 2x">
                         
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-7.webp 1x,
-                                                        ./images/works/works-7@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 480px)" 
+                            srcset="./images/works/works-7.webp 1x,
+                                ./images/works/works-7@2x.webp 2x" type="image/webp">
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-7.jpg 1x,
-                                                        ./images/works/works-7.jpg@2x.jpg 2x ">
+                            <source media="(min-width: 480px)" 
+                            srcset="./images/works/works-7.jpg 1x,
+                                ./images/works/works-7.jpg@2x.jpg 2x ">
                         
-                            <img src="#" alt="Разворот журнала">
+                            <img src="./images-portfolio/издание_phqux.jpg" alt="Разворот журнала" width="370">
                         </picture>
                        
                     </div>
@@ -404,26 +438,32 @@
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                         <picture>
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-8-desktop.webp 1x,
-                                                                                    ./images/works/works-8-desktop@2x.webp 2x"
+                            <source media="(min-width: 1200px)" 
+                                srcset="./images/works/works-8-desktop.webp 1x,
+                                            ./images/works/works-8-desktop@2x.webp 2x"
                                 type="image/webp">
-                            <source media="(min-width: 1200px)" srcset="./images/works/works-8-desktop.jpg 1x,
-                                                                                ./images/works/works-8-desktop@2x.jpg 2x ">
+                            <source media="(min-width: 1200px)" 
+                                srcset="./images/works/works-8-desktop.jpg 1x,
+                                        ./images/works/works-8-desktop@2x.jpg 2x ">
                         
-                            <source media="(min-width: 768px)" srcset="./images/works/works-8-tablet.webp 1x,
-                                                                                ./images/works/works-8-tablet@2x.webp 2x
+                            <source media="(min-width: 768px)" 
+                                srcset="./images/works/works-8-tablet.webp 1x,
+                                        ./images/works/works-8-tablet@2x.webp 2x
                                                                                 " type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./images/works/works-8-tablet.jpg 1x,
-                                                                                    ./images/works/works-8-tablet@2x.jpg 2x">
+                            <source media="(min-width: 768px)" 
+                                srcset="./images/works/works-8-tablet.jpg 1x,
+                                            ./images/works/works-8-tablet@2x.jpg 2x">
                         
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-8.webp 1x,
-                                                                                ./images/works/works-8@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 480px)" 
+                                srcset="./images/works/works-8.webp 1x,
+                                        ./images/works/works-8@2x.webp 2x" type="image/webp">
                         
-                            <source media="(min-width: 480px)" srcset="./images/works/works-8.jpg 1x,
-                                                                                ./images/works/works-8.jpg@2x.jpg 2x ">
+                            <source media="(min-width: 480px)" 
+                                srcset="./images/works/works-8.jpg 1x,
+                                        ./images/works/works-8.jpg@2x.jpg 2x ">
                         
-                            <img src="#" alt="Белый ярлык с буквами">
+                            <img src="./images-portfolio/lab_fhens.jpg" alt="Белый ярлык с буквами" width="370">
                         </picture>
                         
                    </div>
@@ -468,7 +508,7 @@
                              srcset="./images/works/works-9.jpg 1x,
                                         ./images/works/works-9.jpg@2x.jpg 2x ">
                         
-                        <img src="#" alt="Ноутбук и руки">
+                        <img src="./images-portfolio/growing_d8ru4.jpg" alt="Ноутбук и руки" width="370">
                         </picture>
                         
                    </div>
@@ -557,6 +597,9 @@
         </div>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/body-lock.js"></script>
 </body>
 
 </html>
