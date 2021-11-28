@@ -482,7 +482,7 @@ h6 {
   position: absolute;
   width: 100%;
   height: 4px;
-  bottom: -1px;
+  bottom: -2px;
   border-radius: 2px;
   background-color: var(--accent-color);
 }
@@ -1180,13 +1180,13 @@ h6 {
 }
 
 .card-item {
+  flex-grow: 1;
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
 .projects-item {
-  outline: 2px solid teal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1203,6 +1203,9 @@ h6 {
 }
 
 .portfolio-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
