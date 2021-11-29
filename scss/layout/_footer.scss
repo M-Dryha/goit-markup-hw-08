@@ -29,12 +29,14 @@
   }
 }
 
-.footer-adress-wrapper,
-.footer-div {
+.footer-adress-wrapper {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: (100% / 2);
     margin-left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
