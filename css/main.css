@@ -21,7 +21,7 @@
   margin: -1px;
 }
 
-.social-list__link, .footer-form-button, .footer-form-mail, .features__div, .clients__link, .address, .webstudio-white, .footer-item, .portfolio-list, .modal-close-btn, .modal-form-checkbox-label {
+.social-list__link, .footer-form-button, .footer-form-mail, .features__div, .clients__link, .address, .webstudio-white, .footer-item, .modal-close-btn, .modal-form-checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
