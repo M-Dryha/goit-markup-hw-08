@@ -241,6 +241,10 @@ h6 {
   padding-right: 10px;
 }
 
+.burger-social__link--padding {
+  padding-left: 0;
+}
+
 .burger-contacts {
   margin-bottom: 64px;
 }
