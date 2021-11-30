@@ -647,11 +647,12 @@ h6 {
   line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 320px;
   margin: auto;
   color: var(--secondary-color-text);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero__header {
     width: 360px;
   }
