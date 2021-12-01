@@ -113,12 +113,17 @@
 }
 
 .modal-form-checkbox {
-  display: block;
   margin-right: 8px;
 }
 
 .modal-form-checkbox-label {
-  @extend %flex;
+  display: inline-block;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   font-weight: 400;
   font-size: 12px;
@@ -129,8 +134,9 @@
   margin-bottom: 30px;
 
   &::before {
-    display: block;
+    display: inline-block;
     content: "";
+    vertical-align: middle;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
